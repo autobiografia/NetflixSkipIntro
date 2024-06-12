@@ -1,0 +1,17 @@
+{
+  "author":  "autobiografia",
+  "manifest_version": 3,
+  "name": "Netflix Skip Intro",
+  "version": "1.0",
+  "description": "Automatically clicks the 'Skip Intro' button on Netflix. @autobiografia",
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["*://*.netflix.com/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
